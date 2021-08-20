@@ -1,0 +1,22 @@
+{
+  "name": "breakfastwithkanye",
+  "version": "1.0.0",
+  "description": "Daily Kanye Quote Mailer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottHCollier/breakfastWithKanye.git"
+  },
+  "author": "scott collier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottHCollier/breakfastWithKanye/issues"
+  },
+  "homepage": "https://github.com/ScottHCollier/breakfastWithKanye#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
