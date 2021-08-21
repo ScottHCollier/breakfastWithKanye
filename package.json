@@ -1,26 +1,27 @@
 {
-  "name": "breakfastwithkanye",
-  "version": "1.0.0",
-  "description": "Daily Kanye Quote Mailer",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ScottHCollier/breakfastWithKanye.git"
-  },
-  "author": "scott collier",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ScottHCollier/breakfastWithKanye/issues"
-  },
-  "homepage": "https://github.com/ScottHCollier/breakfastWithKanye#readme",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "ejs-mate": "^3.0.0",
-    "express": "^4.17.1",
-    "method-override": "^3.0.0",
-    "node-fetch": "^2.6.1"
-  }
+    "name": "breakfastwithkanye",
+    "version": "1.0.0",
+    "description": "Daily Kanye Quote Mailer",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ScottHCollier/breakfastWithKanye.git"
+    },
+    "author": "scott collier",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ScottHCollier/breakfastWithKanye/issues"
+    },
+    "homepage": "https://github.com/ScottHCollier/breakfastWithKanye#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "ejs-mate": "^3.0.0",
+        "express": "^4.17.1",
+        "method-override": "^3.0.0",
+        "node-fetch": "^2.6.1"
+    }
 }
