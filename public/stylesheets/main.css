@@ -586,22 +586,22 @@ body {
   .background-top .content #kanye {
     width: 20rem;
     height: 20rem;
-    transform: translate(-0.5rem, -35rem);
+    transform: translate(0rem, -35rem);
   }
   .background-top .content h2 {
     font-size: 3rem;
-    transform: translate(8.5rem, 2rem);
+    transform: translate(9rem, 2rem);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274);
     width: fit-content;
   }
   .background-top .content h1 {
     font-size: 10rem;
-    transform: translate(1rem, -10rem);
+    transform: translate(1.5rem, -10rem);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.294);
     width: fit-content;
   }
   .background-top .content form {
-    transform: translate(2rem, 10rem);
+    transform: translate(2.5rem, 10rem);
     display: flex;
     flex-direction: column;
     width: 80%;
