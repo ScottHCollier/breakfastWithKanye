@@ -1,8 +1,17 @@
+const button = document.getElementById("submit");
+
+const colors = ["#000080ff", "#87de87ff", "#fa6722ff", "#f8cb30ff"];
+
+button.style.backgroundColor = colors[0];
+
+let index = 1;
+
 setInterval(() => {
-    // const badges = this.state.badges.slice();
-    // const coinFlip = Math.floor(Math.random() * 2);
-    // const randomIndex = Math.floor(Math.random() * badges.length);
-    // badges[randomIndex].color = this.getRandomColor();
-    // badges[randomIndex].rotate = rotate[coinFlip];
-    // this.setState({ badges });
-}, 125);
+    if (index === colors.length) {
+        button.style.backgroundColor = colors[0];
+        index = 1;
+    } else {
+        button.style.backgroundColor = colors[index];
+        index++;
+    }
+}, 4000);

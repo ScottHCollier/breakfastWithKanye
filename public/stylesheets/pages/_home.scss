@@ -2,8 +2,109 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+body {
+    background-color: #eee;
+}
+
 .background-top {
+    position: relative;
     width: 100%;
     height: 60vh;
-    background: linear-gradient(90deg, blue, white);
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        #kanye {
+            width: 30rem;
+            height: 30rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+            transform: translate(15rem, 8rem);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274);
+        }
+
+        h1 {
+            font-size: 18rem;
+            transform: translate(-1rem, -14rem);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.294);
+        }
+
+        form {
+            transform: translate(5rem, -25rem);
+            display: flex;
+            justify-content: start;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.246);
+            width: 28.6em;
+
+            input {
+                padding: 1.2em 3em;
+                border: none;
+            }
+
+            button {
+                border: none;
+                padding: 0 3em;
+                transition: background-color 1500ms ease-in-out;
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    > img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+        animation-name: cfFadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 16s;
+        z-index: -1;
+    }
+
+    > img:nth-of-type(1) {
+        animation-delay: 12s;
+    }
+    > img:nth-of-type(2) {
+        animation-delay: 8s;
+    }
+    > img:nth-of-type(3) {
+        animation-delay: 4s;
+    }
+    > img:nth-of-type(4) {
+        animation-delay: 0;
+    }
+}
+
+.main-body {
+    width: 100%;
+    height: 200vh;
+    background-color: #eee;
+}
+
+@keyframes cfFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    92% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
