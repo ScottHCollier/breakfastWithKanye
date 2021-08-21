@@ -19,12 +19,32 @@
                     <h2>breakfast with</h2>
                     <h1>Kanye</h1>
                     <form action="/register" method="POST">
-                        <input
-                            type="email"
-                            placeholder="Email Address"
-                            name="email"
-                        />
-                        <button id="submit" type="submit">Subscribe</button>
+                        <div class="row">
+                            <input
+                                id="tl"
+                                type="text"
+                                name="firstName"
+                                placeholder="First Name"
+                                required
+                            />
+                            <input
+                                id="bl"
+                                type="email"
+                                placeholder="Email Address"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="row">
+                            <input
+                                id="tr"
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                required
+                            />
+                            <button id="submit" type="submit">Subscribe</button>
+                        </div>
                     </form>
                 </div>
                 <img id="kanye" src="images/kanye_one.png" alt="" />

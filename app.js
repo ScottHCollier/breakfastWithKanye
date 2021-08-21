@@ -21,16 +21,20 @@ app.get("/", (req, res) => {
     res.render("home");
 });
 
+app.get("/success", (req, res) => {
+    res.render("success");
+});
+
 app.post("/register", (req, res) => {
-    const { email } = req.body;
+    const { firstName, lastName, email } = req.body;
 
     let url =
         "https://api.sheety.co/ce814f97391c575b1aeb8ce8ffac546b/contacts/email";
     let body = {
         email: {
-            firstName: "test",
-            lastName: "test",
-            email: email,
+            firstName,
+            lastName,
+            email,
         },
     };
 
@@ -40,24 +44,9 @@ app.post("/register", (req, res) => {
         headers: headers,
     })
         .then((response) => response.json())
-        .then((json) => {
-            console.log(json);
-        });
+        .then((json) => {});
 
-    res.send(email);
-
-    // let url =
-    //     "https://api.sheety.co/ce814f97391c575b1aeb8ce8ffac546b/contacts/email";
-
-    // fetch(url, {
-    //     method: "GET",
-    // })
-    //     .then((response) => response.json())
-    //     .then((json) => {
-    //         // Do something with the data
-    //         console.log(json.email);
-    //     });
-    // res.send(email);
+    res.redirect("success");
 });
 
 const port = process.env.PORT || 3000;

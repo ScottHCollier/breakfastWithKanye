@@ -461,32 +461,48 @@ body {
 }
 .background-top .content h2 {
   font-size: 4rem;
-  transform: translate(15rem, 8rem);
+  transform: translate(15rem, 7rem);
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274);
 }
 .background-top .content h1 {
   font-size: 18rem;
-  transform: translate(-1rem, -14rem);
+  transform: translate(-1rem, -15rem);
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.294);
 }
 .background-top .content form {
-  transform: translate(5rem, -25rem);
+  transform: translate(2rem, -27rem);
   display: flex;
   justify-content: start;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.246);
-  width: 28.6em;
+  width: 26em;
 }
 .background-top .content form input {
-  padding: 1.2em 3em;
+  padding: 1.2em 2em;
   border: none;
 }
-.background-top .content form button {
+.background-top .content form input:nth-of-type(1) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.198);
+  border-right: 1px solid rgba(128, 128, 128, 0.198);
+}
+.background-top .content form #tl {
+  border-top-left-radius: 1em;
+}
+.background-top .content form #tr {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.background-top .content form #bl {
+  border-bottom-left-radius: 1em;
+}
+.background-top .content form #submit {
+  border-bottom-right-radius: 1em;
+}
+.background-top .content form .row button {
   border: none;
-  padding: 0 3em;
-  transition: background-color 1500ms ease-in-out;
+  padding: 1.2em 5em;
+  transition: background-color 3000ms ease-in-out;
   color: white;
 }
-.background-top .content form button:hover {
+.background-top .content form .row button:hover {
   cursor: pointer;
 }
 .background-top > img {
