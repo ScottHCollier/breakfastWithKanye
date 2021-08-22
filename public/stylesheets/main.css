@@ -612,10 +612,11 @@ body {
   }
   .background-top .content form input:nth-of-type(1) {
     border-bottom: 1px solid rgba(128, 128, 128, 0.198);
-    border-right: 1px solid rgba(128, 128, 128, 0.198);
+    border-right: none;
   }
   .background-top .content form #tl {
     border-top-left-radius: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.198);
   }
   .background-top .content form #tr {
     border-top-right-radius: 0;
@@ -651,20 +652,21 @@ body {
     align-items: center;
   }
   .success-content .card {
-    width: 40em;
-    height: 10em;
+    width: 20em;
+    height: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     padding: 2em;
     border-radius: 1em;
-    transform: translate(0, -8rem);
+    transform: translate(0, -14rem);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.157);
   }
   .success-content .card h2 {
     color: black;
     font-size: 4rem;
+    text-align: center;
   }
 }
 
